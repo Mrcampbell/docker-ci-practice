@@ -1,0 +1,1 @@
+docker run -it -p 3000:3000/tcp -v /app/node_modules -v $(pwd):/app udemy-react:latest

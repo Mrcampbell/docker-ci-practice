@@ -1,0 +1,15 @@
+# This is meant to be run with docker-compose 
+# and volumes for live reloading
+FROM node:alpine
+
+WORKDIR '/app'
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]
