@@ -6,4 +6,4 @@ before_install:
   - docker build -t mikercampbell/docker-ci-practice -f Dockerfile.dev .
 
 script:
- - docker run mikercampbell/docker-ci-practice npm run test -- -- coverage
+ - docker run mikercampbell/docker-ci-practice npm run test -- --coverage
